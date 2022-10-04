@@ -1,10 +1,32 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppGuiaCurso.Inicial">
-  <ContentView.Content>
-      <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
-      </StackLayout>
-  </ContentView.Content>
-</ContentView>
+             x:Class="AppGuiaCurso.Inicial"
+             BackgroundColor="#f3f2f0"
+             Title="App Guia do Curso de DS">
+  <ContentPage.Content>
+
+        <ScrollView>
+  <StackLayout Padding="10">
+
+                <Label Text="Olá! Este é o app para guiá-lo pelo Curso Técnico em Desenvolvimento de Sistemas"
+                       FontSize="Medium"
+                       Style="{ StaticResource textoCentralizado }"/>
+
+                <Label Text="O curso tem três módulos e dura um ano e meio. Pensamos em desenvolver este app para expilcar o conteúdo"
+                       FontSize="Medium"
+                       Style="{ StaticResource textoCentralizado }"/>
+
+                <Label Text="Em breve este app estará disponível na Play Store para download."
+                       TextColor="#AB0209"
+                        Style="{ StaticResource textoCentralizado }"/>
+
+                <Label Text="Este app foi desenvolvido sob a orientação do Prof. Tiago A. Silva"
+             Style="{ StaticResource textoCentralizado}"/>
+
+
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

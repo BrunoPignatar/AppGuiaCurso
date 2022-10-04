@@ -1,10 +1,31 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppGuiaCurso.View.ComponentesPrimeiro">
-  <ContentView.Content>
-      <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
-      </StackLayout>
-  </ContentView.Content>
-</ContentView>
+             x:Class="AppGuiaCurso.View.ComponentesPrimeiro"
+             BackgroundColor="#F3F2F0"
+             Title="Disciplina do Primeiro Módulo">
+  <ContentPage.Content>
+
+        <ScrollView>
+    <StackLayout VerticalOptions="CenterAndExpand" Padding="10">
+
+                <Button Text="Linguagem, Trabalho e tecnologia" Clicked="Button_Clicked" Style="{ StaticResource botaoCinza }"/>
+
+                <Button Text="Programação e Algoritmos" Clicked="Button_Clicked_1" Style="{ StaticResource botaoCinza }"/>
+
+                <Button Text="Banco de Dados I" Clicked="Button_Clicked_2"  Style="{ StaticResource botaoCinza }"/>
+               
+                <Button Text="Análise e Projetos de sistemas" Clicked="Button_Clicked_3"  Style="{ StaticResource botaoCinza }"/>
+
+                <Button Text="Design Digital" Clicked="Button_Clicked_4"  Style="{ StaticResource botaoCinza }"/>
+               
+                <Button Text="Programação Web I" Clicked="Button_Clicked_5"  Style="{ StaticResource botaoCinza }"/>
+
+                <Button Text="Fundamentos da  Informação" Clicked="Button_Clicked_6"  Style="{ StaticResource botaoCinza }"/>
+
+                <Button Text="Técnicas de programação" Clicked="Button_Clicked_7"  Style="{ StaticResource botaoCinza }"/>
+
+            </StackLayout>
+        </ScrollView>
+    </ContentPage.Content>
+</ContentPage>

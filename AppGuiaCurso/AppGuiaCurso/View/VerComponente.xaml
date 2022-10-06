@@ -1,10 +1,33 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
-<ContentView xmlns="http://xamarin.com/schemas/2014/forms" 
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" 
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AppGuiaCurso.View.VerComponente">
-  <ContentView.Content>
-      <StackLayout>
-          <Label Text="Hello Xamarin.Forms!" />
+             x:Class="AppGuiaCurso.View.VerComponente"
+             BackgroundColor="#f3f2f0"
+             Title="Detalhes do Componente">
+  <ContentPage.Content>
+      <StackLayout VerticalOptions="CenterAndExpand">
+            <ScrollView>
+                <StackLayout Padding="20">
+                    <Label Text="{Binding Nome}" HorizontalTextAlignment="Center" FontAttributes="Bold"
+                           Margin="0, 0, 0, 30" TextColor="#ab0209" FontSize="Title"/>
+
+                    <Label Text="Atribuições e Responsabilidades " HorizontalTextAlignment="Center"
+                            TextColor="#f3f2f0" BackgroundColor="#3e474c" FontSize="Large"/>
+
+                    <Label Text="{Binding AtribuicoesResponsabilidades}"
+                           Margin="0, 0, 0, 30" FontSize="Medium" HorizontalTextAlignment="Center"/>
+
+                    <Label Text="Valores e Atitudes" HorizontalTextAlignment="Center"
+                           BackgroundColor="#3e474c" TextColor="#f3f2f0" FontSize="Large"/>
+
+                    <Label Text="{Binding ValoresAtitudes}"
+                           FontSize="Medium" HorizontalTextAlignment="Center"/>
+
+
+
+
+                </StackLayout>
+            </ScrollView>
       </StackLayout>
-  </ContentView.Content>
-</ContentView>
+  </ContentPage.Content>
+</ContentPage>

@@ -182,7 +182,7 @@ namespace AppGuiaCurso.View
                     Nome = "Técnica de Programação",
 
                     AtribuicoesResponsabilidades = "Desenvolver programas de computador, utilizando principios de boas praticas" +
-                    "*realizar versionamento no desenvolvimento de programas"
+                    "*realizar versionamento no desenvolvimento de programas",
 
 
                     ValoresAtitudes = "Incentivar a criatividade, incentivar comportamentos éticos",

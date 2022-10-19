@@ -63,34 +63,137 @@ namespace AppGuiaCurso.View
             }
         }
 
-        private void Button_Clicked_2(object sender, EventArgs e)
+        private async void Button_Clicked_2(object sender, EventArgs e)
         {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Banco de Dados I",
 
+                    AtribuicoesResponsabilidades = "Modelar Banco de Dados",
+
+
+                    ValoresAtitudes = "Estimular a organização, fortalecer a persistência e o interesse na resolução de situação-problema, promover ações que considerem o respeito às normas estabelecidas",
+
+                };
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
 
-        private void Button_Clicked_3(object sender, EventArgs e)
+        private async void Button_Clicked_3(object sender, EventArgs e)
         {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Análise e Projeto de sistemas",
 
+                    AtribuicoesResponsabilidades = "Elaborar Projetos de sistema de informação",
+
+
+                    ValoresAtitudes = "Estimular a organização, incentivar a criatividade, fortalecer a persistência e o interesse na resolução da situação-problema",
+
+                };
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
 
-        private void Button_Clicked_4(object sender, EventArgs e)
+        private async void Button_Clicked_4(object sender, EventArgs e)
         {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Design Digital",
 
+                    AtribuicoesResponsabilidades = "Desenvolver elementos gráficos para aplicativos e sites",
+
+
+                    ValoresAtitudes = "Incentivar a criatividade, respeitar as manifestações culturais de outros povos, incentivar ações que promovam a cooperação",
+
+                };
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
 
-        private void Button_Clicked_5(object sender, EventArgs e)
+        private async void Button_Clicked_5(object sender, EventArgs e)
         {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Programação Web I",
 
+                    AtribuicoesResponsabilidades = "Desenvolver Sites para Web",
+
+
+                    ValoresAtitudes = "Incentivar a criatividade, estimular a organização, fortalecer a persistência e o interesse na resolução de situação-problema",
+
+                };
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
 
-        private void Button_Clicked_6(object sender, EventArgs e)
+        private async void Button_Clicked_6(object sender, EventArgs e)
         {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Fundamentos da Informatica",
 
+                    AtribuicoesResponsabilidades = "Operar sistemas computacionais",
+
+
+                    ValoresAtitudes = "Desenvolver a criticidade, incentivar comportamentos éticos",
+
+                };
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
 
-        private void Button_Clicked_7(object sender, EventArgs e)
+        private async void Button_Clicked_7(object sender, EventArgs e)
         {
+            try
+            {
+                var c = new Componente
+                {
+                    Nome = "Técnica de Programação",
 
+                    AtribuicoesResponsabilidades = "Desenvolver programas de computador, utilizando principios de boas praticas" +
+                    "*realizar versionamento no desenvolvimento de programas"
+
+
+                    ValoresAtitudes = "Incentivar a criatividade, incentivar comportamentos éticos",
+
+                };
+                await Navigation.PushAsync(new VerComponente(c));
+            }
+            catch (Exception ex)
+            {
+                await DisplayAlert("Ops!", ex.Message, "OK");
+            }
         }
     }
 }

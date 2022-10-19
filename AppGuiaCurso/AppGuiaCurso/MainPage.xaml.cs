@@ -10,6 +10,7 @@ using AppGuiaCurso.View;
 
 namespace AppGuiaCurso
 {
+    [DesignTimeVisible(false)]
     public partial class MainPage : MasterDetailPage
     {
         public MainPage()

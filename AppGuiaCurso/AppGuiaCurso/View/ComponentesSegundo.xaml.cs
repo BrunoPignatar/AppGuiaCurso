@@ -10,11 +10,16 @@ using Xamarin.Forms.Xaml;
 namespace AppGuiaCurso.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class ComponentesSegundo : ContentView
+    public partial class ComponentesSegundo : ContentPage
     {
         public ComponentesSegundo()
         {
             InitializeComponent();
+        }
+
+        private void Button_Clicked(object sender, EventArgs e)
+        {
+
         }
     }
 }

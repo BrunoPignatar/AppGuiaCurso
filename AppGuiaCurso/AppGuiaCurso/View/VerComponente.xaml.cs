@@ -1,4 +1,5 @@
-﻿using System;
+﻿using AppGuiaCurso.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -10,11 +11,12 @@ using Xamarin.Forms.Xaml;
 namespace AppGuiaCurso.View
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
-    public partial class VerComponente : ContentView
+    public partial class VerComponente : ContentPage
     {
-        public VerComponente()
+        public VerComponente(Componente c)
         {
             InitializeComponent();
+            this.BindingContext = c;
         }
     }
 }
